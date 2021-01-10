@@ -10,7 +10,12 @@ class TodoAddForm (forms.ModelForm):
         # , tupple olduğu için konuldu yoksa hata verir
         # exclude=('title',)  title hariç hepsi
         
-
+class TodoUpdateForm (forms.ModelForm):
+    class Meta:
+        model=Todo
+        fields=('title', 'completed')
+        
+        
         
 
         
